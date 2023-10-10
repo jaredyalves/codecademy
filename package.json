@@ -1,0 +1,6 @@
+{
+  "name": "codecademy",
+  "dependencies": {
+    "prettier": "^3.0.3"
+  }
+}
