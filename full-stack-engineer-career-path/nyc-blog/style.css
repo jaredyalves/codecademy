@@ -1,0 +1,115 @@
+body {
+    background: #e6e6e6;
+}
+
+nav ul {
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #010e80;
+}
+
+nav li {
+    display: table-cell;
+}
+
+li a {
+    display: block;
+    padding: 30px 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+h2 a {
+    padding: 33px 25px;
+    text-decoration: none;
+    color: white;
+}
+
+h2 a:hover {
+    background-color: #111;
+}
+
+figcaption {
+    text-align: left;
+}
+
+header {
+    margin-left: 14px;
+}
+
+article {
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 80%;
+    margin: 15px;
+    text-align: left;
+}
+
+img {
+    position: relative;
+    right: 28px;
+    width: 400px;
+    height: 300px;
+}
+
+aside {
+    font-size: 18px;
+    position: relative;
+    left: 10px;
+    max-width: 80%;
+    padding: 15px;
+    border: 1px solid black;
+    border-width: 5px;
+    border-color: #010e80;
+}
+
+footer {
+    position: relative;
+    bottom: -100px;
+    width: 100%;
+    background-color: #010e80;
+}
+
+footer p {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+footer a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+video {
+    display: block;
+    width: 420px;
+    height: 250px;
+    padding: 15px;
+}
+
+audio {
+    box-sizing: border-box;
+    width: 98%;
+    padding: 15px;
+}
+
+embed {
+    width: 400px;
+    height: 458px;
+    padding: 15px;
+}
