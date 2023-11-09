@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+table {
+    width: 500px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 2px solid blueviolet;
+}
+
+table th {
+    border-bottom: 1px solid blueviolet;
+    background-color: coral;
+}
+
+table td {
+    padding: 2px;
+    border-bottom: 1px solid coral;
+}
+
+.code {
+    font-family: monospace;
+    font-weight: bold;
+    padding: 2px;
+    background-color: lightgray;
+}
