@@ -1,0 +1,391 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Component Styles
+  6. Page Styles
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0 auto;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0 auto;
+    color: #9B9B9B;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.clearfix::after {
+    display: table;
+    clear: both;
+    content: " ";
+}
+
+/* 2. Typography Styles
+======================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 15px;
+    transition: font-size 0.25s ease;
+}
+
+h1 {
+    font-size: calc(100px / 1.5);
+    line-height: 0.85;
+}
+
+h2 {
+    font-size: calc(65px / 1.5);
+    line-height: 0.85;
+    margin-top: 10px;
+}
+
+@media (min-width: 720px) {
+    h1 {
+        font-size: calc(65px / 1.25);
+    }
+
+    h2 {
+        font-size: calc(65px / 1.25);
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+}
+
+p {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 15px;
+}
+
+a {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* 3. Structure Styles
+======================================== */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container:before, .container:after {
+    display: table;
+    clear: both;
+    content: " ";
+}
+
+/* 4. Modules Styles
+======================================== */
+
+/* Site Navigation */
+.site-navigation {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px 1em;
+}
+
+.site-header-left {
+    display: inline-block;
+}
+
+.site-header-left li {
+    line-height: 0;
+}
+
+.site-header-right {
+    display: inline-block;
+    float: right;
+}
+
+.site-header-right li,
+.footer-right li {
+    display: inline;
+}
+
+.site-header-right li a {
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Site Footer */
+.footer {
+    padding: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #0C0C7A;
+}
+
+.footer-navigation {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* 5. Component Styles
+======================================== */
+button {
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.button {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+    padding: 15px 30px;
+    transition: opacity 0.5s ease;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    opacity: 0.75;
+}
+
+.button-primary {
+    float: left;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+}
+
+input, textarea {
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 20px;
+    transition: border-color 0.5s ease;
+    color: #333333;
+    border: none;
+    background-color: #FFFFFF;
+    box-shadow: none;
+}
+
+input {
+    display: block;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+/* 6. Page Styles
+======================================== */
+.photo-hero {
+    min-height: 700px;
+    background-color: #2828C8;
+}
+
+.photo-hero-text {
+    padding: 0 20px;
+}
+
+.photo-hero h1 {
+    margin: 1em 0 40px;;
+    color: #FFFFFF;
+}
+
+.photo-hero h1 span {
+    color: #3EC714;
+}
+
+.photo-hero p {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.photo-grid {
+    margin-top: -80px;
+}
+
+.image-box {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    width: calc(100% - 40px);
+    max-height: 450px;
+    margin: 20px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+}
+
+.photo-blockquote {
+    margin-top: -80px;
+    padding-bottom: 80px;
+    background-color: #0C0C7A;
+}
+
+blockquote p {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 24px;
+    line-height: 1.4;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+blockquote:before {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 150px;
+    line-height: 30px;
+    display: block;
+    padding-top: 40px;
+    content: '  ';
+    text-align: center;
+    color: #FFFFFF;
+}
+
+blockquote footer {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3ec714;
+}
+
+.photo-about, .photo-contact {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.photo-about h2 {
+    margin-bottom: 30px;
+    color: #2828C8;
+}
+
+.photo-about p {
+    padding: 0 10%;
+    text-align: left;
+    color: #888888;
+}
+
+.photo-contact {
+    background-color: #2B7A12;
+}
+
+.photo-contact h2 {
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.photo-contact p {
+    padding: 0 10%;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.photo-contact-form {
+    padding: 0 10%;
+}
+
+.photo-contact-form input:nth-child(1), .photo-contact-form input:nth-child(3), .photo-contact-form input:nth-child(2), .photo-contact-form input:nth-child(4) {
+    margin: 0 0 20px;
+}
+
+
+@media (min-width: 585px) {
+    .photo-hero {
+        min-height: 600px;
+    }
+}
+
+@media (min-width: 720px) {
+    .photo-hero {
+        min-height: 500px;
+    }
+
+    .image-box {
+        width: calc(33.3333% - 40px);
+    }
+
+    .photo-about p, .photo-contact p, .photo-contact-form {
+        padding: 0 20%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .photo-hero {
+        min-height: 700px;
+    }
+
+    .photo-hero-text {
+        display: block;
+        width: 70%;
+    }
+
+    .photo-contact-form input {
+        display: inline-block;
+        float: left;
+        width: 48%;
+    }
+
+    .photo-contact-form input:nth-child(1), .photo-contact-form input:nth-child(3) {
+        margin: 0 2% 20px 0;
+    }
+
+    .photo-contact-form input:nth-child(2), .photo-contact-form input:nth-child(4) {
+        margin: 0 0 20px 2%;
+    }
+}
