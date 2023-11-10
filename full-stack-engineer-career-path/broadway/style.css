@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: #333333;
+}
+
+nav {
+    display: block;
+}
+
+nav ul {
+    width: 340px;
+    margin: 0 auto;
+    padding: 13px 0;
+}
+
+nav li {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+    width: 80px;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+main {
+    position: relative;
+    top: 80px;
+    text-align: center;
+}
+
+main h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 80px;
+    padding-top: 100px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    background-color: #333;
+}
+
+footer p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.jumbotron {
+    height: 800px;
+    background-image: url("https://content.codecademy.com/projects/broadway/bg.jpg");
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.btn-main {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 40px;
+    text-decoration: none;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #333;
+}
+
+.btn-default {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.supporting {
+    padding: 120px 0;
+}
+
+.supporting .col {
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    width: 200px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.supporting img {
+    height: 32px;
+}
+
+.supporting h2 {
+    font-size: 23px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.supporting p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.supporting a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #333333;
+    border: 2px solid #333333;
+    background-color: white;
+}
+
+@media (max-width: 500px) {
+    main h1 {
+        font-size: 50px;
+        padding: 0 40px;
+    }
+
+    .supporting .col {
+        width: 100%;
+    }
+}
