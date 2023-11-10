@@ -1,0 +1,21 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    background: #ffffff;
+}
+
+input {
+    font-size: 16px;
+    padding: 5px;
+}
+
+input:not(:first-of-type) {
+    margin-left: 20px;
+}
+
+video {
+    width: 500px;
+    max-width: 85%;
+    margin: 30px;
+}
